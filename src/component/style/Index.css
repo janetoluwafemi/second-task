@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightGrey: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+}
+body {
+    font-family: "Outfit", sans-serif;
+}
+.container {
+    background-color: var(--eggshell);
+    display: grid;
+    place-content: center;
+}
+.wrapper {
+    width: 100%;
+    max-width: 80%;
+    margin: 60px auto;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.wrapper img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    margin-bottom: 15px;
+}
+
+.prepTime {
+    background-color: var(--roseWhite);
+    padding: 20px 0 20px 30px;
+    margin: 25px 0;
+    border-radius: 10px;
+}
+
+.prepTime p {
+    color: var(--darkRaspberry);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.prepTime ul li {
+    margin-bottom: 10px;
+}
+
+.prepTime ul li strong {
+    color: var(--darkCharcoal);
+}
+
+hr{
+    border-color: var(--eggshell);
+}
+
+.ingredients {
+    margin: 20px 0;
+
+    & p {
+        color: var(--darkRaspberry);
+        font-size: 28px;
+        font-weight: medium;
+        font-family: "Young Serif", serif;
+        margin-bottom: 10px;
+        padding-left: 0px;
+    }
+}
+.ingredients ul {
+    padding: 20px 0 20px 30px;
+    margin: 10px;
+}
+.ingredients ul li{
+    margin-bottom: 10px;
+}
+.instructions{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        color: var(--darkRaspberry);
+        font-size: 28px;
+        font-weight: medium;
+        font-family: "Young Serif", serif;
+        margin-bottom: 10px;
+    }
+}
+.instructions ol li{
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+
+.nutrition{
+    margin: 30px 0;
+}
+.firstP{
+    color: var(--darkRaspberry);
+    font-size: 28px;
+    font-weight: medium;
+    font-family: "Young Serif", serif;
+    margin-bottom: 10px;
+}
+
+.secondP{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 16px;
+}
+table tr{
+    border-bottom: 1px solid var(--darkCharcoal);
+    border-spacing: 20px;
+
+}
+td{ padding: 12px;}
+.Calories {
+    color: var(--darkRaspberry);
+    font-weight: bold;
+}
+.Carbs {
+    color: var(--darkRaspberry);
+    font-weight: bold;
+}
+.Protein {
+    color: var(--darkRaspberry);
+    font-weight: bold;
+}
+.Fat {
+    color: var(--darkRaspberry);
+    font-weight: bold;
+}
